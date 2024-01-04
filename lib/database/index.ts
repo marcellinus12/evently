@@ -10,7 +10,7 @@ export const connectToDatabase = async () => {
     if(!MONGODB_URL) throw new Error('MONGODB_RUL is missing');
 
     cached.promise = cached.promise || mongoose.connect(MONGODB_URL, {
-        dbName: 'arthur',
+        dbName: 'evently',
         bufferCommands: false,
     })
 
